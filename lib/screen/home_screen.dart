@@ -30,7 +30,16 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Flexible(
             flex: 2,
-            child: Container(),
+            child: Center(
+              child: IconButton(
+                iconSize: 100,
+                color: Theme.of(context).cardColor,
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.play_circle_outlined,
+                ),
+              ),
+            ),
           ),
           Flexible(
             flex: 1,
