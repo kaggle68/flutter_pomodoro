@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,28 +11,30 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         children: [
           Flexible(
+            flex: 1,
             child: Container(
-              decoration: const BoxDecoration(
-                color: Colors.red,
+              alignment: Alignment.bottomCenter,
+              child: Text(
+                '25:00',
+                style: TextStyle(
+                  color: Theme.of(context).cardColor,
+                  fontSize: 89,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
           ),
           Flexible(
-            child: Container(
-              decoration: const BoxDecoration(
-                color: Colors.red,
-              ),
-            ),
+            flex: 2,
+            child: Container(),
           ),
           Flexible(
-            child: Container(
-              decoration: const BoxDecoration(
-                color: Colors.red,
-              ),
-            ),
+            flex: 1,
+            child: Container(),
           ),
         ],
       ),
