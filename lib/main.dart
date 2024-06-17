@@ -12,8 +12,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          backgroundColor: const Color(0xFFE7626C),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          surface: const Color(0xFFE7626C), // 여기에서 배경색을 설정합니다.
         ),
         textTheme: const TextTheme(
           displayLarge: TextStyle(
